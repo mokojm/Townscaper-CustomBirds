@@ -466,9 +466,6 @@ namespace MoreBirds
 					MeshFilter chosenMeshF0 = thisHit.transform.parent.FindChild("Mesh0").GetComponent<MeshFilter>();
 					if (chosenBird)
 					{
-						//Debug.DrawRay(ray.origin, ray.direction * raycastHit.distance, Color.yellow);
-						//MelonLogger.Msg("Chosen" + chosenBird.transform.position.ToString());
-						//birdflockPlace.UprootBird(chosenBird, 1f);
 						chosenBird = null;
 
 						(MeshFilter, MeshFilter) birdToMove = (null, null);
