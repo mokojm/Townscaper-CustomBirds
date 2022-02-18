@@ -20,8 +20,6 @@ namespace MoreBirds
 			(new Vector2(-0f, 0.203125f),  new Mesh[7])
 		};
 
-
-
 		//Randomize data for granting birds textures
 		public static double[] percentBirds = new double[] { 0.2f, 0.2f, 0.2f, 0.2f, 0.2f };
 		private static System.Random rand = new System.Random();
@@ -443,20 +441,13 @@ namespace MoreBirds
 			//Test Box Collider
 			foreach (GameObject mesh1 in FindGameObjectsWithName("Mesh1"))
 			{
-				MelonLogger.Msg("OK");
 				MeshCollider compFound = mesh1.GetComponent<MeshCollider>();
-				MelonLogger.Msg("OK1");
 
 				if (compFound == null)
                 {
-					MelonLogger.Msg("OK2");
 					MeshCollider meshc = mesh1.AddComponent<MeshCollider>();
-					//Rigidbody rigid = mesh1.AddComponent<Rigidbody>();
-					//rigid.isKinematic = true;
 					meshc.sharedMesh = standMesh;
-					//box.size = renderer.bounds.size;
-					//mesh1.layer = 21;
-					MelonLogger.Msg("OK3");
+
 				}
 			}
 		}
