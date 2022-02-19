@@ -16,6 +16,8 @@
                 }
                 if (MoreBirdsMain.CreateMultiBirds())
                 {
+                    //Update amount of birds
+                    MoreBirdsMain.UpdateAmountBirds();
                     MoreBirdsMain.UpdateBirds();
                 }
 

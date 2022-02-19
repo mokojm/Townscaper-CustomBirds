@@ -134,7 +134,6 @@
     <Compile Include="Input.cs" />
     <Compile Include="IL2CPP\Il2CppAssetBundle.cs" />
     <Compile Include="MoreBirds.cs" />
-    <Compile Include="ClickHandler.cs" />
     <Compile Include="MoreBirdsUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

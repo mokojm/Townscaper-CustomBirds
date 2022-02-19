@@ -49,9 +49,9 @@ namespace MoreBirds
 
 		//Spot one bird
 		public static Placemaker.Life.Bird chosenBird;
-		public static KeyCode ColorBirdKey;
-		public static KeyCode UpRootBirdKey;
-		public static KeyCode UpRootAllBirdsKey;
+		public static KeyCode ColorBirdKey = KeyCode.N;
+		public static KeyCode UpRootBirdKey = KeyCode.B;
+		public static KeyCode UpRootAllBirdsKey = KeyCode.V;
 
 		//MeshCollider check
 		public static bool colliderUpToDate = false;
@@ -100,6 +100,8 @@ namespace MoreBirds
             {
 				if (nb > myAmountBirds)
                 {
+					myAmountBirds = nb;
+					UpdateAmountBirds();
 					birdflockPlace.IterateBirdCreation();
 					myAmountBirds = birdflockPlace.activeBirdsCount;
 				}
@@ -133,7 +135,7 @@ namespace MoreBirds
             {
 				birdflockPlace.idealBirdCount = (byte)myAmountBirds;
 				birdflockPlace.minBirdCount = (byte)(myAmountBirds - 1);
-				birdflockPlace.minBirdCount = (byte)(myAmountBirds + 1);
+				birdflockPlace.maxBirdCount = (byte)(myAmountBirds + 1);
 			}
         }
 
@@ -143,7 +145,7 @@ namespace MoreBirds
 			if (!initialized)
 			{
 				birdflock = GameObject.Find("BirdFlock");
-				MelonLogger.Msg("Create used");
+				//MelonLogger.Msg("Create used");
 
 				if (!birdflock)
 				{
@@ -208,7 +210,7 @@ namespace MoreBirds
 			}
 
 			GameObject[] arrayBody = FindGameObjectsWithName("Body");
-			MelonLogger.Msg(arrayBody.Length);
+			//MelonLogger.Msg(arrayBody.Length);
 
 			for (int i = 0; i < arrayBody.Length; i++)
 			{

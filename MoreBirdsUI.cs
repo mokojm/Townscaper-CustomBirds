@@ -24,7 +24,7 @@ namespace MoreBirds
 		public static void Initialize(MelonMod thisMod)
 		{
 
-			ModSettings myModSettings = UIManager.Register(thisMod, new Color32(199, 243, 182, 255));
+			myModSettings = UIManager.Register(thisMod, new Color32(199, 243, 182, 255));
 
 			myModSettings.AddButton("Paint", "General", new Color32(199, 243, 182, 255), new Action(delegate { MyPaintBirdButton(); }));
 			myModSettings.AddButton("Reset", "General", new Color32(255, 179, 174, 255), new Action(delegate { MyResetButton(); }));
@@ -47,21 +47,21 @@ namespace MoreBirds
 			referencedSlider = myModSettings.controlSliders["Amount of Birds"].GetComponent<Slider>();
 			
 			myModSettings.AddKeybind("Color bird", "Input", KeyCode.N, new Color32(10, 190, 124, 255));
+            myModSettings.AddKeybind("Tease bird", "Input", KeyCode.B, new Color32(10, 190, 124, 255));
+            myModSettings.AddKeybind("Tease ALL", "Input", KeyCode.V, new Color32(10, 190, 124, 255));
 
+
+            //Apply button
+            myModSettings.AddButton("Apply", "General", new Color32(243, 227, 182, 255), new Action(delegate { Apply(); }));
+
+            isInitialized = true;
+		}
+
+		public static void Apply()
+		{
 			myModSettings.GetValueKeyCode("Color bird", "Input", out MoreBirdsMain.ColorBirdKey);
-			//MoreBirdsMain.ColorBirdKey = myKeyCode;
-
-			myModSettings.AddKeybind("Tease bird", "Input", KeyCode.B, new Color32(10, 190, 124, 255));
-
-			myModSettings.GetValueKeyCode("Tease bird", "Input", out KeyCode myKeyCode2);
-			MoreBirdsMain.UpRootBirdKey = myKeyCode2;
-
-			myModSettings.AddKeybind("Tease ALL", "Input", KeyCode.V, new Color32(10, 190, 124, 255));
-
-			myModSettings.GetValueKeyCode("Tease ALL", "Input", out KeyCode myKeyCode3);
-			MoreBirdsMain.UpRootAllBirdsKey = myKeyCode3;
-
-			isInitialized = true;
+			myModSettings.GetValueKeyCode("Tease bird", "Input", out MoreBirdsMain.UpRootBirdKey);
+			myModSettings.GetValueKeyCode("Tease ALL", "Input", out MoreBirdsMain.UpRootAllBirdsKey);
 		}
 
 		public static void MyPaintBirdButton()
@@ -99,7 +99,7 @@ namespace MoreBirds
 
 		public static void AddBirds(float value)
         {
-			MelonLogger.Msg(value);
+			//MelonLogger.Msg(value);
 			if (isInitialized)
             {
 				MoreBirdsMain.AddBirds((int)value);
