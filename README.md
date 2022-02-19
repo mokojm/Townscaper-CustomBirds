@@ -31,14 +31,14 @@ https://github.com/LavaGang/MelonLoader/releases/latest/
 2.4. During the installation a "Mods" folder gets created it your game folder. MelonLoader does not(!) change any game files. 
 	 You can uninstall anytime through the installer or by deleting the "version.dll" file.
 
-3. Download the mod (latest release) by clicking [here](<ToComplete>)
+3. Download the mod (latest release) by clicking [here](https://github.com/mokojm/Townscaper-CustomBirds/releases/download/v0.9.0/BirdMod.zip)
 
-4. Extract all the files from <ToComplete> into your games Mods folder.
+4. Extract all the files from "BirdMod.zip" into your games Mods folder.
 	! WARNING ! If you had already "ModUI.dll" copied it will replace the original one.
 
-5. Update "TownColor.png" in "C:\\Users\\<UserName>\\AppData\\LocalLow\\Oskar Stalberg\\Townscaper\\Textures" by doing a backup copy in a safe folder. 
+5. Update "TownColor.png" in "C:\\Users\\((UserName))\\AppData\\LocalLow\\Oskar Stalberg\\Townscaper\\Textures" by doing a backup copy in a safe folder. (AppData is an hidden folder)
 
-6. Copy the "TownColor.png" file included in the downloaded mod in "C:\\Users\\<UserName>\\AppData\\LocalLow\\Oskar Stalberg\\Townscaper\\Textures"
+6. Copy the "TownColor.png" file included in the downloaded mod in "C:\\Users\\((UserName))\\AppData\\LocalLow\\Oskar Stalberg\\Townscaper\\Textures"
 
 7. Start the game !
 
