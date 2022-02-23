@@ -42,6 +42,13 @@ https://github.com/LavaGang/MelonLoader/releases/latest/
 
 7. Start the game !
 
+8. The menu can be found here :
+<p align="center">
+<a href="./Mod_use.gif">
+<img src="./Mod_use.gif" alt="CustomBirdsUse">
+</a>
+</p>
+
 
 # Details
 
