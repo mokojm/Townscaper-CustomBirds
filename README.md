@@ -1,4 +1,8 @@
 # Townscaper-CustomBirds
+
+:warning: 2022/06/27 : Beware that TextureManager mod does not work very well with CustomBirds mod. Birds with multiple colors might not show up. Will release an update in the near future
+
+
 Townscaper mod for customizing the texture of the birds, the amount of birds and play with them
 
 <p align="center">
