@@ -28,7 +28,7 @@ https://github.com/LavaGang/MelonLoader/releases/latest/
 
 2.1. Click "Select" and navigate to your Townscaper folder and select the Townscaper.exe (usually: C:\Program Files(x86)\Steam\steamapps\common\Townscaper\Townscaper.exe)
 
-2.2. Untick the "Latest" checkbox and choose version 0.4.3
+2.2. :warning: Untick the "Latest" checkbox and choose **version 0.4.3** :warning:
 
 2.3. Click install 
 
@@ -38,15 +38,16 @@ https://github.com/LavaGang/MelonLoader/releases/latest/
 3. Download the mod (latest release) by clicking [here](https://github.com/mokojm/Townscaper-CustomBirds/releases/download/v0.9.0/BirdMod.zip)
 
 4. Extract all the files from "BirdMod.zip" into your games Mods folder.
-	! WARNING ! If you had already "ModUI.dll" copied it will replace the original one.
 
-5. Update "TownColor.png" in "C:\\Users\\((UserName))\\AppData\\LocalLow\\Oskar Stalberg\\Townscaper\\Textures" by doing a backup copy in a safe folder. (AppData is an hidden folder)
+5. Copy the "TownColor.png" file included in the downloaded mod in "C:\\Users\\((UserName))\\AppData\\LocalLow\\Oskar Stalberg\\Townscaper\\Textures"
 
-6. Copy the "TownColor.png" file included in the downloaded mod in "C:\\Users\\((UserName))\\AppData\\LocalLow\\Oskar Stalberg\\Townscaper\\Textures"
+6. Download the utility mod "ModUI" (:warning: latest release published on 2022/06/27 :warning:) from: https://github.com/DigitalzombieTLD/TownscaperModUI/releases/latest/
 
-7. Start the game !
+7. Extract all files from the ModUI download into your games Mods folder
 
-8. The menu can be found here :
+8. Start the game !
+
+9. The menu can be found here :
 <p align="center">
 <a href="./Mod_use.gif">
 <img src="./Mod_use.gif" alt="CustomBirdsUse">
